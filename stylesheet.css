@@ -1,0 +1,16 @@
+.notification {
+  padding: 0.5em 0.8em;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: rgba(10, 10, 10, 0.7);
+  border-radius: 0.3em;
+}
+
+.notification.success {
+  color: #ffffff;
+}
+
+.notification.failure {
+  color: #9f3a38;
+}

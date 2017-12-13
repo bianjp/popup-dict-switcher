@@ -1,0 +1,11 @@
+{
+  "uuid": "popup-dict-switcher@bianjp.com",
+  "name": "popup-dict switcher",
+  "description": "一键开关划词翻译",
+  "url": "https://github.com/bianjp/popup-dict-switcher",
+  "shell-version": [
+    "3.22",
+    "3.24",
+    "3.26"
+  ]
+}
