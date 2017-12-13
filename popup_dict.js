@@ -35,6 +35,7 @@ function is_running(pid = null) {
 
 // 启动
 function start(callback) {
+  callback = callback || function(){};
   let pid = read_pidfile();
   if (pid && is_running(pid)) {
     callback();
@@ -75,6 +76,7 @@ function start(callback) {
 
 // 关闭
 function stop(callback) {
+  callback = callback || function(){};
   let pid = read_pidfile();
   if (!is_running(pid)) {
     callback();
