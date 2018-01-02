@@ -1,10 +1,15 @@
 # popup-dict-switcher
 
-Gnome Shell Extension: 一键开关 [popup-dict](https://github.com/bianjp/popup-dict/)
+Gnome 扩展，一键开关 [popup-dict](https://github.com/bianjp/popup-dict/)
 
-`popup-dict` 命令需要在用户的 `PATH` 中
+点击状态栏图标即可切换状态
+
+![on](./screenshots/on.png)
+![off](./screenshots/off.png)
 
 ## 安装
+
+确保已安装 [popup-dict](https://github.com/bianjp/popup-dict/)，且 `popup-dict` 命令在用户的 `PATH` 中
 
 ### 在线安装（推荐）
 
