@@ -1,7 +1,7 @@
 {
   "uuid": "popup-dict-switcher@bianjp.com",
   "name": "popup-dict switcher",
-  "description": "一键开关划词翻译",
+  "description": "一键开关划词翻译。\nUseful only if you're using https://github.com/bianjp/popup-dict",
   "url": "https://github.com/bianjp/popup-dict-switcher",
   "shell-version": [
     "3.22",

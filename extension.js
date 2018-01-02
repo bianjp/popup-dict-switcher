@@ -64,12 +64,22 @@ function init(metadata) {
   button.connect('button-press-event', toggle_popup_dict);
 }
 
+// 解锁屏幕时也会触发
 function enable() {
-  is_running = PopupDict.is_running();
-  update_status();
+  // 恢复禁用前的运行状态
+  if (is_running) {
+    PopupDict.start(function(error) {
+      is_running = !error;
+      update_status();
+    });
+  } else {
+    is_running = PopupDict.is_running();
+    update_status();
+  }
   Main.panel._rightBox.insert_child_at_index(button, 0);
 }
 
+// 锁屏时也会触发
 function disable() {
   PopupDict.stop();
   Main.panel._rightBox.remove_child(button);

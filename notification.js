@@ -31,7 +31,7 @@ function show_notification(success, text) {
 
   Tweener.addTween(label, {
     opacity: 0,
-    time: success ? 3 : 5,
+    time: success ? 2 : 5,
     transition: 'easeInExpo',
     onComplete: hide_notification,
   });
