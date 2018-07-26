@@ -17,8 +17,6 @@ https://extensions.gnome.org/extension/1349/popup-dict-switcher/
 
 在线安装方式便于升级
 
-__目前尚未通过审核，暂无法通过此方式安装__
-
 ### 手动
 
 1. 下载文件并移动/链接到用户扩展目录（`~/.local/share/gnome-shell/extensions/`）：

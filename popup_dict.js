@@ -60,17 +60,22 @@ function start(callback) {
 
   // 检查是否启动成功
   // 启动命令是异步调用的，因此需等待一段时间再检查
-  // 延时不能过小
-  GLib.timeout_add(GLib.PRIORITY_DEFAULT, 400, function(){
+  let retry = 5;
+  GLib.timeout_add(GLib.PRIORITY_DEFAULT, 300, function(){
     if (is_running()) {
+      // 不返回 false 会一直重复执行
       callback();
-    } else {
-      // 启动命令的输出(stdout, stderr)可能会很长，不便显示
-      callback('启动失败');
+      return false;
     }
 
-    // 不返回 false 会一直重复执行
-    return false;
+    retry--;
+    if (retry < 0) {
+      // 启动命令的输出(stdout, stderr)可能会很长，不便显示
+      callback('启动失败');
+      return false;
+    } else {
+      return true;
+    }
   });
 }
 

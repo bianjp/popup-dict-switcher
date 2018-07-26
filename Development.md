@@ -22,3 +22,4 @@
 * [Gjs Docs](http://devdocs.baznga.org/)
 * [Gjs source code](https://github.com/GNOME/gnome-shell/blob/master/js/)
 * [St Docs](https://developer.gnome.org/st/stable/)
+* [St Source Code](https://github.com/GNOME/gnome-shell/tree/master/src/st)
